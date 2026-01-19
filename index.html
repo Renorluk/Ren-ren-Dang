@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!-- SỬA LỖI Ở ĐÂY -->
+    <meta charset="UTF-8">
+
+    <title>Trang web trên PC05</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GIỮ NGUYÊN -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- THÊM HIỆU ỨNG (KHÔNG ẢNH HƯỞNG PHẦN KHÁC) -->
+    <style>
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+
+            /* bỏ gạch dưới */
+            text-decoration: none;
+            color: #333;
+
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 35px rgba(0,0,0,0.18);
+        }
+
+        .card:active {
+            transform: scale(0.95); /* hiệu ứng bấm */
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <h1>Trang chủ của TKT - TC25THA trên PC05</h1>
+    <nav>
+        <a href="about.html"> Giới Thiệu </a>     
+        <a href="services.html"> Dịch vụ </a>
+        <a href="contact.html"> Liên Hệ </a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2> Thiết kế đơn giản - hại điện </h2>
+    <p>đơn giản như đan giỡn luôn</p>
+    <button>Bắt đầu</button>
+</section>
+
+<section id="about" class="section">
+    <h3>Giới thiệu</h3>
+    <p>ai biêt gì - tự tìm hiểu đi má</p>
+</section>
+
+<section id="services" class="section gray">
+    <h3>Dịch vụ</h3>
+    <div class="cards">
+        <a href="about.html" class="card">Giới thiệu</a>
+        <a href="services.html" class="card">Dịch vụ</a>
+        <a href="contact.html" class="card">Liên hệ</a>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h3>Liên hệ</h3>
+    <p>Email: thekingmebear@example.com</p>
+</section>
+
+<footer class="footer">
+    © 2026 😊
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

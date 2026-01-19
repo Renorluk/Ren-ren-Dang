@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!-- SỬA LỖI -->
+    <meta charset="UTF-8">
+
+    <title>Dịch vụ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS RIÊNG CHO SERVICES -->
+    <style>
+        .services-container {
+            padding: 60px 10%;
+        }
+
+        .services-container h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 28px;
+        }
+
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+
+            text-decoration: none;
+            color: #333;
+
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+        }
+
+        .service-card:active {
+            transform: scale(0.95);
+        }
+
+        .service-card h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .service-card p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <h1>Dịch vụ</h1>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="about.html">Giới thiệu</a>
+        <a href="contact.html">Liên hệ</a>
+    </nav>
+</header>
+
+<section class="services-container">
+    <h2>Các dịch vụ của tôi</h2>
+
+    <div class="service-list">
+        <a href="dv1.html" class="service-card">
+            <h3>Dịch vụ 1</h3>
+            <p>dịch vụ lám chưa có ý định thêm gì cả (cập nhật)</p>
+        </a>
+
+        <a href="dv2.html" class="service-card">
+            <h3>Dịch vụ 2</h3>
+            <p>Phần cho phép xem ảnh</p>
+        </a>
+
+        <a href="dv3.html" class="service-card">
+            <h3>Dịch vụ 3</h3>
+            <p>Phần cho phép xem video</p>
+        </a>
+    </div>
+</section>
+
+<footer class="footer">
+    © 2026 😊
+</footer>
+
+</body>
+</html>
